@@ -14,9 +14,11 @@ import java.util.Arrays;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
     @Override
     @Bean
     public AuthenticationManager authenticationManager() throws Exception {
         return new ProviderManager(Arrays.asList((AuthenticationProvider) new AuthProvider()));
     }
+
 }
