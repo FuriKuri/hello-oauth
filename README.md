@@ -3,6 +3,11 @@ Simple oauth server
 
 ## Usage
 
+### Use Docker Image
+```
+docker run -p 9999:9999 furikuri/oauth
+```
+
 ### Run server
 ```
 ./gradlew bootRun
