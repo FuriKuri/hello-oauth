@@ -26,7 +26,7 @@ http://localhost:9999/uaa/oauth/authorize?response_type=code&client_id=acme&redi
 ```
 $ curl acme:acmesecret@localhost:9999/uaa/oauth/token  \
 -d grant_type=authorization_code -d client_id=acme     \
--d redirect_uri=http://example.com -d code=<code-from-url>
+-d redirect_uri=http://furikuri.net -d code=<code-from-url>
 
 $ TOKEN=<access-token>
 $ curl -H "Authorization: Bearer $TOKEN" localhost:9999/uaa/user
