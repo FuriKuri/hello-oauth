@@ -1,23 +1,27 @@
 # hello-oauth
 Simple oauth server
 
-## Usage
+## Installation
 
-### Use Docker Image
+### Use docker image
 ```
 docker run -p 9999:9999 furikuri/oauth
 ```
 
-### Run server
+### Use gradle
 ```
 ./gradlew bootRun
 ```
+##
 
-### Call
+## Usage
+
+### Get code
 ```
 http://localhost:9999/uaa/oauth/authorize?response_type=code&client_id=acme&redirect_uri=http://furikuri.net
 ```
 
+### Get and use access token
 ```
 $ curl acme:acmesecret@localhost:9999/uaa/oauth/token  \
 -d grant_type=authorization_code -d client_id=acme     \
