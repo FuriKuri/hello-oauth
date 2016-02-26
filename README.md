@@ -17,6 +17,7 @@ docker run -p 9999:9999 furikuri/oauth
 ## Usage
 
 ### Get code
+Use any username. Username == password
 ```
 http://localhost:9999/uaa/oauth/authorize?response_type=code&client_id=acme&redirect_uri=http://furikuri.net
 ```
